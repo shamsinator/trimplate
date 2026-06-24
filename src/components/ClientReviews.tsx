@@ -1,5 +1,5 @@
 import { useState, useCallback, useEffect, useRef } from "react";
-import useEmblaCarousel, { EmblaCarouselType } from "embla-carousel-react";
+import useEmblaCarousel from "embla-carousel-react";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, Pause, Play } from "lucide-react";
 import { GradientSection } from "@/components/ui/gradient-section";
