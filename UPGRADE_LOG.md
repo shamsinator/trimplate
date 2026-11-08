@@ -304,3 +304,4 @@ Niet gevonden. TypeScript 7 upgrade is van toepassing.
 | Fase | Datum | Commits | Resultaat |
 |------|-------|---------|-----------|
 | 0 — Inventarisatie | 2026-11-08 | — | Baseline vastgesteld |
+| 1 — Patch | 2026-11-08 | 71fa226 | ✅ tsc OK, build OK (373.54 kB gzip 123 kB), 9→7 vulns |
