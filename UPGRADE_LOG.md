@@ -308,3 +308,5 @@ Niet gevonden. TypeScript 7 upgrade is van toepassing.
 | 2 — Minor | 2026-11-08 | 4c2f180, 30ce4a7 | ✅ tsc OK, build OK (389.72 kB gzip 128 kB), 7→5 vulns; React Router future flags toegevoegd |
 | 3.1a — Node 22 | 2026-11-08 | e3d79d2 | ✅ .nvmrc + engines.node >=22.22.0 + @types/node ^22 |
 | 3.1b — TypeScript 6 | 2026-11-08 | a0cd119 | ✅ TS 6.0.3; fix NodeJS.Timeout → ReturnType<typeof setTimeout> in ClientReviews.tsx |
+| 3.2a — Vite 7 | 2026-11-08 | c4bb8d1 | ✅ Vite 7.3.7 + plugin-react-swc 4.3.3; override vite-plugin-pages ^0.33.3 voor tempo-devtools |
+| 3.2b — Vite 8 | 2026-11-08 | 39c5596 | ✅ Vite 8.3.6 (Rolldown); build 5.5s (-3x); fix __dirname → import.meta.dirname; verwijder @ts-ignore allowedHosts |
