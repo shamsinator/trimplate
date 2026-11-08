@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import { AnimatePresence } from "framer-motion";
-import { Routes, Route, useLocation, useRoutes } from "react-router-dom";
+import { Routes, Route, useLocation, useRoutes } from "react-router";
 import { HelmetProvider, Helmet } from "react-helmet-async";
 import { SkipLink } from "@/components/ui/skip-link";
 import { Toaster } from "@/components/ui/toaster";

@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router";
 import { useState, useEffect, useRef } from "react";
 import { ChevronDown } from "lucide-react";
 

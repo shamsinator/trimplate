@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ReactNode } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation } from "react-router";
 import { pageVariants } from "@/animations/pageTransitions";
 
 interface RootLayoutProps {
