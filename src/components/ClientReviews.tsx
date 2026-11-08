@@ -53,7 +53,7 @@ export default function ClientReviews({
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(autoPlayInterval > 0);
   const [canUseDom, setCanUseDom] = useState(false);
-  const autoPlayIntervalRef = useRef<NodeJS.Timeout | null>(null);
+  const autoPlayIntervalRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // Wait for component to be mounted to use browser APIs
   useEffect(() => {
