@@ -306,3 +306,5 @@ Niet gevonden. TypeScript 7 upgrade is van toepassing.
 | 0 — Inventarisatie | 2026-11-08 | — | Baseline vastgesteld |
 | 1 — Patch | 2026-11-08 | 71fa226 | ✅ tsc OK, build OK (373.54 kB gzip 123 kB), 9→7 vulns |
 | 2 — Minor | 2026-11-08 | 4c2f180, 30ce4a7 | ✅ tsc OK, build OK (389.72 kB gzip 128 kB), 7→5 vulns; React Router future flags toegevoegd |
+| 3.1a — Node 22 | 2026-11-08 | e3d79d2 | ✅ .nvmrc + engines.node >=22.22.0 + @types/node ^22 |
+| 3.1b — TypeScript 6 | 2026-11-08 | a0cd119 | ✅ TS 6.0.3; fix NodeJS.Timeout → ReturnType<typeof setTimeout> in ClientReviews.tsx |
