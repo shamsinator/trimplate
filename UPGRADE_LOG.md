@@ -311,4 +311,5 @@ Niet gevonden. TypeScript 7 upgrade is van toepassing.
 | 3.2a — Vite 7 | 2026-11-08 | c4bb8d1 | ✅ Vite 7.3.7 + plugin-react-swc 4.3.3; override vite-plugin-pages ^0.33.3 voor tempo-devtools |
 | 3.2b — Vite 8 | 2026-11-08 | 39c5596 | ✅ Vite 8.3.6 (Rolldown); build 5.5s (-3x); fix __dirname → import.meta.dirname; verwijder @ts-ignore allowedHosts |
 | 3.3 — geïsoleerde libs | 2026-11-08 | f524244, 5319178, b91faae | ✅ zustand 5.1.0, react-helmet-async 3.0.0, react-ga4 3.0.1 |
+| 3.4 — Zod 4 + resolvers | 2026-11-08 | 7be3916, 285c415, d793abd | ✅ resolvers 5.9.2 → Zod 4.6.7 (geen schema-aanpassingen) → resolvers 7.0.3; Zod 4 +22 kB in bundle (verwacht) |
 | ⚠️ date-fns | — | cff74b2 (revert) | date-fns 4 uitgesteld naar stap 7 (react-day-picker 10 vereist ook date-fns 4; react-day-picker 8 blokkeert andere installs via peer dep) |
