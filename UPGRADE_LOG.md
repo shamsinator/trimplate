@@ -313,3 +313,14 @@ Niet gevonden. TypeScript 7 upgrade is van toepassing.
 | 3.3 — geïsoleerde libs | 2026-11-08 | f524244, 5319178, b91faae | ✅ zustand 5.1.0, react-helmet-async 3.0.0, react-ga4 3.0.1 |
 | 3.4 — Zod 4 + resolvers | 2026-11-08 | 7be3916, 285c415, d793abd | ✅ resolvers 5.9.2 → Zod 4.6.7 (geen schema-aanpassingen) → resolvers 7.0.3; Zod 4 +22 kB in bundle (verwacht) |
 | ⚠️ date-fns | — | cff74b2 (revert) | date-fns 4 uitgesteld naar stap 7 (react-day-picker 10 vereist ook date-fns 4; react-day-picker 8 blokkeert andere installs via peer dep) |
+| 3.5 — React 19 + libs | 2026-11-08 | 7e8b6c1 | ✅ react/react-dom 19.3.1, @types/react 19.3.0; lucide-react 1.70.0 + vaul 1.1.2 + framer-motion 14.10.1 pull-forward (peer dep blokkade); brand-icons.tsx shim aangemaakt; ease-tuple fix in pageTransitions.ts |
+
+### 3.5 — Deviaties
+
+| Afwijking | Reden |
+|-----------|-------|
+| lucide-react 0.394.0 → 1.70.0 (was stap 7) | `lucide-react@0.394.0` declareert `peer react: "^16.5.1 \|\| ^17.0.0 \|\| ^18.0.0"` — blokkeert `@types/react@19` install |
+| vaul 0.9.9 → 1.1.2 (was stap 7) | `vaul@0.9.9` declareert `peer react: "^16.8 \|\| ^17.0 \|\| ^18.0"` — blokkeert lucide-react 1.x install |
+| framer-motion 11.18 → 14.10.1 (was stap 7) | Preventief meegenomen; had peer-dep conflicten met react 19 veroorzaakt bij stap 7 |
+| brand-icons.tsx shim nu aangemaakt (was stap 7) | lucide-react 1.x verwijderde Facebook/Twitter/Linkedin/Instagram/Github; TypeScript-fouten blokkeerden build; volledige stap-7 icon-replacement (UI-aanpassing) blijft gepland |
+| pageTransitions.ts ease-arrays getypeerd als `[number, number, number, number]` | framer-motion 14 versmalde `Easing` van `number[]` naar `BezierDefinition` tuple |
