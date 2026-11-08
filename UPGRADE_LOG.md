@@ -310,3 +310,5 @@ Niet gevonden. TypeScript 7 upgrade is van toepassing.
 | 3.1b — TypeScript 6 | 2026-11-08 | a0cd119 | ✅ TS 6.0.3; fix NodeJS.Timeout → ReturnType<typeof setTimeout> in ClientReviews.tsx |
 | 3.2a — Vite 7 | 2026-11-08 | c4bb8d1 | ✅ Vite 7.3.7 + plugin-react-swc 4.3.3; override vite-plugin-pages ^0.33.3 voor tempo-devtools |
 | 3.2b — Vite 8 | 2026-11-08 | 39c5596 | ✅ Vite 8.3.6 (Rolldown); build 5.5s (-3x); fix __dirname → import.meta.dirname; verwijder @ts-ignore allowedHosts |
+| 3.3 — geïsoleerde libs | 2026-11-08 | f524244, 5319178, b91faae | ✅ zustand 5.1.0, react-helmet-async 3.0.0, react-ga4 3.0.1 |
+| ⚠️ date-fns | — | cff74b2 (revert) | date-fns 4 uitgesteld naar stap 7 (react-day-picker 10 vereist ook date-fns 4; react-day-picker 8 blokkeert andere installs via peer dep) |
