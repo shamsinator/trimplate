@@ -3,6 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": ">=22.22.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -68,7 +71,7 @@
   "devDependencies": {
     "@swc/core": "^1.16.22",
     "@types/lodash": "^4.17.27",
-    "@types/node": "^20.19.43",
+    "@types/node": "^22.20.5",
     "@types/react": "^18.3.31",
     "@types/react-dom": "^18.3.7",
     "@vitejs/plugin-react-swc": "^3.11.0",
