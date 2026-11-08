@@ -1,13 +1,12 @@
 import { Suspense } from "react";
 import { AnimatePresence } from "framer-motion";
-import { Routes, Route, useLocation, useRoutes } from "react-router";
+import { Routes, Route, useLocation } from "react-router";
 import { HelmetProvider, Helmet } from "react-helmet-async";
 import { SkipLink } from "@/components/ui/skip-link";
 import { Toaster } from "@/components/ui/toaster";
 import { CookieConsent } from "@/components/ui/cookie-consent";
 import { routes } from "./routes";
 import { RootLayout } from "./components/layout/RootLayout";
-import tempoRoutes from "tempo-routes";
 
 function App() {
   const location = useLocation();
@@ -31,7 +30,6 @@ function App() {
                   <Route key={route.path} {...route} />
                 ))}
               </Routes>
-              {import.meta.env.VITE_TEMPO === "true" && useRoutes(tempoRoutes)}
             </main>
           </RootLayout>
         </AnimatePresence>

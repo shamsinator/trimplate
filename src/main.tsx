@@ -6,7 +6,6 @@ import { BrowserRouter } from "react-router";
 import { ErrorBoundary } from "./components/error-boundary";
 import { HelmetProvider } from "react-helmet-async";
 
-import { TempoDevtools } from "tempo-devtools";
 import {
   initGA,
   logPageView,
@@ -14,7 +13,6 @@ import {
   trackEvent,
 } from "@/lib/analytics";
 
-TempoDevtools.init();
 // Initialize analytics
 initGA();
 logPageView(); // Log initial page view

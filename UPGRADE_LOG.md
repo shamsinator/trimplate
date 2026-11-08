@@ -318,6 +318,8 @@ Niet gevonden. TypeScript 7 upgrade is van toepassing.
 | 3.7a — react-resizable-panels | 2026-11-08 | 229b6c9 | ✅ 2.1.9 -> 4.20.0; PanelGroup -> Group (direction -> orientation), PanelResizeHandle -> Separator; data-attr selectors bijgewerkt; defaultSize als string voor percentage |
 | 3.7b — react-day-picker + date-fns | 2026-11-08 | 49245b9 | ✅ react-day-picker 8.10.2 -> 10.0.2 + date-fns 3.6.0 -> 4.4.0; calendar.tsx volledig herschreven voor v10 classNames/components API; initialFocus verwijderd (3 plaatsen) |
 | 3.8 — Tailwind 4 + merge 3 | 2026-11-08 | 86c69ee | ✅ tailwindcss 3.4.19 -> 4.3.5; tailwind-merge 2.6.1 -> 3.7.0; @tailwindcss/postcss toegevoegd; autoprefixer verwijderd; tailwind.config.js verwijderd (CSS-first config in index.css via codemod) |
+| 3.9 — TypeScript 7 | 2026-11-08 | 5830dbc | ✅ typescript 6.0.3 -> 7.0.2; geen breaking changes in deze codebase |
+| Beveiligingsfix — tempo-devtools | 2026-11-08 | — | ✅ tempo-devtools verwijderd (CVE-2025-68470 + GHSA-337j-9hxr-rhxg via react-router-dom@6.30.6); `npm audit` → 0 vulnerabilities |
 
 ### 3.8 — Deviaties
 
