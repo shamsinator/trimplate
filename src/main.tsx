@@ -37,7 +37,10 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <ErrorBoundary>
       <HelmetProvider>
-        <BrowserRouter basename={basename}>
+        <BrowserRouter
+          basename={basename}
+          future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
+        >
           <App />
         </BrowserRouter>
       </HelmetProvider>
