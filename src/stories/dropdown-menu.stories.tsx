@@ -2,7 +2,6 @@
 import {
   Cloud,
   CreditCard,
-  Github,
   Keyboard,
   LifeBuoy,
   LogOut,
@@ -15,6 +14,7 @@ import {
   UserPlus,
   Users,
 } from "lucide-react";
+import { Github } from "@/components/ui/brand-icons";
 
 import { Button } from "../components/ui/button";
 import {

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Facebook, Twitter, Linkedin } from "lucide-react";
+import { Facebook, Twitter, Linkedin } from "@/components/ui/brand-icons";
 
 export default function BlogDetail() {
   return (

@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Facebook, Twitter, Linkedin, Instagram } from "@/components/ui/brand-icons";
 import { InstagramFeed } from "@/components/ui/instagram-feed";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";

@@ -1,5 +1,5 @@
-export const easeInOutExpo = [0.87, 0, 0.13, 1]; // Smooth acceleration & deceleration
-export const easeOutBack = [0.34, 1.56, 0.64, 1]; // Slight overshoot effect
+export const easeInOutExpo: [number, number, number, number] = [0.87, 0, 0.13, 1];
+export const easeOutBack: [number, number, number, number] = [0.34, 1.56, 0.64, 1];
 
 export const pageVariants = {
   initial: { opacity: 0, y: 30, scale: 0.98 },

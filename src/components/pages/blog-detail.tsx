@@ -3,15 +3,8 @@ import Header from "../Header";
 import Footer from "../Footer";
 import ScrollToTop from "../ScrollToTop";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import {
-  CalendarDays,
-  Clock,
-  MessageCircle,
-  Heart,
-  Facebook,
-  Twitter,
-  Linkedin,
-} from "lucide-react";
+import { CalendarDays, Clock, MessageCircle, Heart } from "lucide-react";
+import { Facebook, Twitter, Linkedin } from "@/components/ui/brand-icons";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet-async";
 
