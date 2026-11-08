@@ -317,6 +317,14 @@ Niet gevonden. TypeScript 7 upgrade is van toepassing.
 | 3.6 — React Router 8 | 2026-11-08 | 6a30775 | ✅ react-router 8.5.1; react-router-dom verwijderd; 7 imports omgezet; v7_* future flags verwijderd (ingebouwde defaults in v8) |
 | 3.7a — react-resizable-panels | 2026-11-08 | 229b6c9 | ✅ 2.1.9 -> 4.20.0; PanelGroup -> Group (direction -> orientation), PanelResizeHandle -> Separator; data-attr selectors bijgewerkt; defaultSize als string voor percentage |
 | 3.7b — react-day-picker + date-fns | 2026-11-08 | 49245b9 | ✅ react-day-picker 8.10.2 -> 10.0.2 + date-fns 3.6.0 -> 4.4.0; calendar.tsx volledig herschreven voor v10 classNames/components API; initialFocus verwijderd (3 plaatsen) |
+| 3.8 — Tailwind 4 + merge 3 | 2026-11-08 | 86c69ee | ✅ tailwindcss 3.4.19 -> 4.3.5; tailwind-merge 2.6.1 -> 3.7.0; @tailwindcss/postcss toegevoegd; autoprefixer verwijderd; tailwind.config.js verwijderd (CSS-first config in index.css via codemod) |
+
+### 3.8 — Deviaties
+
+| Afwijking | Reden |
+|-----------|-------|
+| Codemod package-install stap mislukt | Codemod probeerde `yarn add` maar yarn is niet geïnstalleerd; packages handmatig met npm geïnstalleerd |
+| Codemod template-scan niet uitgevoerd | Stap crashte omdat TW4 nog niet geïnstalleerd was; border-color compat-laag wel door codemod in index.css gezet |
 
 ### 3.7 — Deviaties
 
