@@ -51,7 +51,7 @@ export const DatePicker = {
           </Button>
         </PopoverTrigger>
         <PopoverContent className="w-auto p-0" align="start">
-          <Calendar mode="single" initialFocus />
+          <Calendar mode="single" />
         </PopoverContent>
       </Popover>
     );
@@ -94,8 +94,7 @@ export const DatePickerRange = {
           </PopoverTrigger>
           <PopoverContent className="w-auto p-0" align="start">
             <Calendar
-              initialFocus
-              mode="range"
+                            mode="range"
               defaultMonth={date?.from}
               selected={date}
               onSelect={setDate}
@@ -147,8 +146,7 @@ export const DatePickerWithPresets = {
           </Select>
           <div className="rounded-md border">
             <Calendar
-              initialFocus
-              mode="single"
+                            mode="single"
               defaultMonth={date}
               selected={date}
               onSelect={setDate}

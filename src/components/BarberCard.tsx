@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
+import { Facebook, Instagram, Twitter, Linkedin } from "@/components/ui/brand-icons";
 import MotionWrapper from "@/animations/MotionWrapper";
 
 interface BarberCardProps {
